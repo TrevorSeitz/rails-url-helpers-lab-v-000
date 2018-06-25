@@ -6,6 +6,12 @@ class StudentsController < ApplicationController
   end
 
   def show
+    
+  end
+
+  def activate
+    if !@student.active
+      @student.active = !@student.active
   end
 
   private
