@@ -10,6 +10,7 @@ class StudentsController < ApplicationController
   end
 
   def activate
+    binding.pry
       @student.active = !@student.active
   end
 
