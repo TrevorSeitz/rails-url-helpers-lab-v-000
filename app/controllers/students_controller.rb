@@ -10,9 +10,7 @@ class StudentsController < ApplicationController
   end
 
   def activate
-    if !@student.active
       @student.active = !@student.active
-    end
   end
 
   private
